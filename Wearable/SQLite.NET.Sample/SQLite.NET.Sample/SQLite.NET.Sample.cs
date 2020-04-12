@@ -29,7 +29,6 @@ namespace SQLite.NET.Sample
         {
             var app = new Program();
             Forms.Init(app);
-            Tizen.Wearable.CircularUI.Forms.Renderer.FormsCircularUI.Init();
             app.Run(args);
         }
     }

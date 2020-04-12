@@ -18,7 +18,6 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
-using Tizen.Wearable.CircularUI.Forms;
 using SQLite;
 using SQLitePCL;
 using System.IO;
@@ -71,14 +70,14 @@ namespace SQLite.NET.Sample
             }
 
             // The root page of your application
-            MainPage = new CirclePage
+            MainPage = new ContentPage
             {
                 Content = new StackLayout
                 {
                     VerticalOptions = LayoutOptions.Center,
                     Children =
                     {
-                        new CircleListView
+                        new ListView
                         {
                             ItemsSource = dbList
                         }
